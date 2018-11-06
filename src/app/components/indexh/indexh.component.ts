@@ -7,14 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IndexhComponent implements OnInit {
 
-  form: string ='entrega';
+  form: string ='anterior';
+
 
   constructor() { }
 
     onChange(type:string){
       this.form = type;
     }
-    
+
   ngOnInit() {
   }
 

@@ -4,187 +4,97 @@
 <!------ Include the above in your HEAD tag ---------->
 
 <div class="container">
-	<div class="row">
-      <img src="https://image.ibb.co/dtvt3L/casanova-renta-de-autos-24.jpg" alt="casanova-renta-de-autos-24">
-		<h3>Para nosotros es muy importante tu opinion, por favor ayudanos a calificar el servicio!!</h3>
-	</div>
-<form class="form-horizontal">
-	<!-- Form Datos Empleado -->
-	<br><br><legend>Datos Empleado</legend>
-	<div class="form-group">
-		<label class="col-md-4 control-label" for="num_empleado">Numero de Empleado</label>  
-		<div class="col-md-4">
-		<input id="num_empleado" name="num_empleado" type="text" placeholder="1234" class="form-control input-md" required="" > 
-		</div>
-	</div>
-	<div class="form-group">
-		<label class="col-md-4 control-label" for="id_nombreE">Nombre</label>  
-		<div class="col-md-4">
-		<input id="id_nombreE" name="id_empleadoE" type="text" placeholder="" class="form-control input-md" required="" disabled="disabled"> 
-		</div>
-	</div>
-<!-- ng Templeate Seleccion de formulario-->
-	<div class="col-md-9">
-			<ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
-			  <li class="nav-item">
-				<a class="nav-link active" id="" data-toggle="tab" (click)="onChange('entrega')" role="tab" aria-controls="entrega" aria-selected="true">Entrega</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" id="" data-toggle="tab" (click)="onChange('recepcion')" role="tab" aria-controls="recepcion" aria-selected="false">Recepcion</a>
-			  </li>
-			</ul>
-	</div>
-	<ng-container *ngIf="form == 'entrega'; then entrega; else recepcion;"></ng-container>
-		<!--Formulario Entrega-->	
-		<ng-template #entrega>
-					<!-- Form Datos Personales Entrega-->
-|	<br><br><br>
-	<legend>Entrega</legend>
-	<div class="form-group">
-			<label class="col-md-4 control-label" for="id_entrega">Num. Orden</label>  
-			<div class="col-md-4">
-			<input id="id_entrega" name="id_entrega" type="text" placeholder="001236545" class="form-control input-md" required="">
+		<legend>Datos Empleado</legend>
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="num_empleado">Numero de Empleado</label>  
+				<div class="col-md-4">
+				<input id="num_empleado" name="num_empleado" type="text" placeholder="1234" class="form-control input-md" required="" > 
+				</div>
 			</div>
-		</div>
-	<legend>Datos Cliente</legend>
-
-	<!-- Text Nombres-->
-	<div class="form-group">
-		<label class="col-md-4 control-label" for="id_nombre">Nombre (s)</label>  
-		<div class="col-md-4">
-		<input id="id_nombre" name="id_nombre" type="text" placeholder="Juan Antonio" class="form-control input-md" required=""> 
-		</div>
-	</div>
-	<!-- Text Apellidos-->
-	<div class="form-group">
-		<label class="col-md-4 control-label" for="id_apellido">Apellidos</label>  
-		<div class="col-md-4">
-			<input id="id_apellido" name="id_apellido" type="text" placeholder="Sanchez Pliego" class="form-control input-md" required=""> 
-		</div>
-	</div>
-	<!-- Genero -->
-	<div class="form-group">
-		<label class="col-md-4 control-label" for="generos">Genero</label>
-		<div class="col-md-4">
-			<div class="radio">
-  				<label for="generos-0">
-				<input type="radio" name="generos" id="generos-0" value="hombre" checked="checked">
-				Hombre
-  				</label>
-  			</div>
-			<div class="radio">
-  				<label for="generos-1">
-				<input type="radio" name="generos" id="generos-1" value="mujer">
-				Mujer
-  				</label>
+			<br><br>
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="id_nombreE">Nombre</label>  
+				<div class="col-md-4">
+				<input id="id_nombreE" name="id_empleadoE" type="text" placeholder="" class="form-control input-md" required="" disabled="disabled"> 
+				</div>
 			</div>
+			<br><br>
+			<legend>Datos Cliente</legend>
+		
+			<!-- Text Nombres-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="id_nombre">Nombre (s)</label>  
+				<div class="col-md-4">
+				<input id="id_nombre" name="id_nombre" type="text" placeholder="Juan Antonio" class="form-control input-md" required=""> 
+				</div>
+			</div>
+			<br><br>
+			<!-- Text Apellidos-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="id_apellido">Apellidos</label>  
+				<div class="col-md-4">
+					<input id="id_apellido" name="id_apellido" type="text" placeholder="Sanchez Pliego" class="form-control input-md" required=""> 
+				</div>
+			</div>
+			<br><br>
+			<!-- Genero -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="generos">Genero</label>
+				<div class="col-md-4">
+					<div class="radio">
+						  <label for="generos-0">
+						<input type="radio" name="generos" id="generos-0" value="hombre" checked="checked">
+						Hombre
+						  </label>
+					  </div>
+					<div class="radio">
+						  <label for="generos-1">
+						<input type="radio" name="generos" id="generos-1" value="mujer">
+						Mujer
+						  </label>
+					</div>
+				</div>
+			</div>
+			<br><br><br>
+			<!-- No. de Servicio-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="id_identidad">No. Orden Servicio</label>  
+				<div class="col-md-5">
+					<input id="id_identidad" name="id_identidad" type="text" placeholder="012345678AB" class="form-control input-md" required="">
+				</div>
+			</div>
+			<br>
+			<!-- Correo-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="id_email">Correo Electronico</label>  
+				<div class="col-md-4">
+					<input id="id_email" name="id_email" type="email" placeholder="correo@correo.com" class="form-control input-md">
+				</div>
+			</div>
+			<br>
+			<!-- Telefono-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="id_cel">Celular/Telefono</label>  
+				<div class="col-md-4">
+					<input id="id_cel" name="id_cel" type="tel" placeholder="55-1234-9876" class="form-control input-md">
+				</div>
+			</div>
+			<br>
+		<!-- Institucion -->
+			<div class="form-group">
+				<label class="col-md-4 control-label">Institucion</label>
+				<div class="col-md-4">
+				<select class="form-control">
+				  <option class="hidden"  selected disabled>Selecciona una</option>
+				  <option id="CFE">CFE</option>
+				  <option id="IMSS">IMSS</option>
+				  <option id="EKAROS">EKAROS</option>
+				</select>
+				</div>
+			</div>
+			<br><br>
+			<legend>Tu opinion es muy importante para nosotros, gracias por contestar esta encuesta</legend>
+				<div>
+					<a class="btnRegister" routerLinkActive="active-link" routerLink="/page1">Siguiente</a>
+				</div>
 		</div>
-	</div>
-	<!-- No. de Servicio-->
-	<div class="form-group">
-		<label class="col-md-4 control-label" for="id_identidad">No. Servicio</label>  
-		<div class="col-md-5">
-			<input id="id_identidad" name="id_identidad" type="text" placeholder="012345678AB" class="form-control input-md" required="">
-		</div>
-	</div>
-	<!-- Correo-->
-	<div class="form-group">
-		<label class="col-md-4 control-label" for="id_email">Correo Electronico</label>  
-		<div class="col-md-4">
-			<input id="id_email" name="id_email" type="email" placeholder="correo@correo.com" class="form-control input-md">
-		</div>
-	</div>
-	<!-- Telefono-->
-	<div class="form-group">
-		<label class="col-md-4 control-label" for="id_cel">Celular/Telefono</label>  
-		<div class="col-md-4">
-			<input id="id_cel" name="id_cel" type="tel" placeholder="55-1234-9876" class="form-control input-md">
-		</div>
-	</div>
-<!-- Institucion -->
-	<div class="form-group">
-		<label class="col-md-4 control-label">Institucion</label>
-		<div class="col-md-4">
-		<select class="form-control">
-		  <option class="hidden"  selected disabled>Selecciona una</option>
-		  <option id="CFE">CFE</option>
-		  <option id="IMSS">IMSS</option>
-		  <option id="EKAROS">EKAROS</option>
-		</select>
-		</div>
-	</div>
-<!-- Formulario de Evaluacion-->
-	<legend>Evalua la Atencion - En una escala del 5 al 10 (5 siendo muy malo y 10 siendo excelente)</legend>
-	<div class="form-group">
-			<label class="col-md-4 control-label" for="id_EV1"><h2>Como fue el trato con el ejecutivo que te atendio?</h2></label>
-			
-	</div>
-	</ng-template>
-	<ng-template #recepcion>
-					<!-- Form Datos Personales -->
-					|	<br><br><br><legend>Datos Cliente</legend>
-					<!-- Text Nombres-->
-					<div class="form-group">
-						<label class="col-md-4 control-label" for="id_nombre">Nombre (s)</label>  
-						<div class="col-md-4">
-						<input id="id_nombre" name="id_nombre" type="text" placeholder="Juan Antonio" class="form-control input-md" required=""> 
-						</div>
-					</div>
-					<!-- Text Apellidos-->
-					<div class="form-group">
-						<label class="col-md-4 control-label" for="id_apellido">Apellidos</label>  
-						<div class="col-md-4">
-							<input id="id_apellido" name="id_apellido" type="text" placeholder="Sanchez Pliego" class="form-control input-md" required=""> 
-						</div>
-					</div>
-					<!-- Genero -->
-					<div class="form-group">
-						<label class="col-md-4 control-label" for="generos">Genero</label>
-						<div class="col-md-4">
-							<div class="radio">
-								  <label for="generos-0">
-								<input type="radio" name="generos" id="generos-0" value="hombre" checked="checked">
-								Hombre
-								  </label>
-							  </div>
-							<div class="radio">
-								  <label for="generos-1">
-								<input type="radio" name="generos" id="generos-1" value="mujer">
-								Mujer
-								  </label>
-							</div>
-						</div>
-					</div>
-					<!-- No. de Servicio-->
-					<div class="form-group">
-						<label class="col-md-4 control-label" for="id_identidad">No. Servicio</label>  
-						<div class="col-md-5">
-							<input id="id_identidad" name="id_identidad" type="text" placeholder="012345678AB" class="form-control input-md" required="">
-						</div>
-					</div>
-					<!-- Correo-->
-					<div class="form-group">
-						<label class="col-md-4 control-label" for="id_email">Correo Electronico</label>  
-						<div class="col-md-4">
-							<input id="id_email" name="id_email" type="email" placeholder="correo@correo.com" class="form-control input-md">
-						</div>
-					</div>
-					<!-- Telefono-->
-					<div class="form-group">
-						<label class="col-md-4 control-label" for="id_cel">Celular/Telefono</label>  
-						<div class="col-md-4">
-							<input id="id_cel" name="id_cel" type="tel" placeholder="55-1234-9876" class="form-control input-md">
-						</div>
-					</div>
-				<!-- Institucion -->
-					<div class="form-group">
-						<label class="col-md-4 control-label" for="id_institucion">Institución</label>  
-						<div class="col-md-6">
-							<input id="id_institucion" name="id_institucion" type="text" placeholder="CFE, EKAROS, IMSS, etc" class="form-control input-md"> 
-						</div>
-					</div>
-
-	</ng-template>
-	</form>
-
-</div>
