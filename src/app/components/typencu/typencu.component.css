@@ -1,0 +1,22 @@
+.btnRegister{
+  text-align: left;
+  float: left;
+  margin-top: 1%;
+  margin-right: 3rem;
+  border: none;
+  border-radius: 1rem;
+  padding: 2%;
+  background: #3b5998;
+  box-shadow: 16 16 16px #3b5998;
+  color: white;
+}
+.imgleft{ 
+    margin-left: 5rem;
+    margin-right: 20rem;
+}
+.imgcenter{
+    margin-right: 20rem;
+}
+.textcenter{
+    text-align: center;
+}

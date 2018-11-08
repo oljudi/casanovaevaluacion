@@ -7,6 +7,8 @@ import { SupportComponent } from './components/support/support.component';
 import { Page3Component } from './components/page3/page3.component';
 import { Page4Component } from './components/page4/page4.component';
 import { Page5Component } from './components/page5/page5.component';
+import { LoginComponent } from './components/login/login.component';
+import { TypencuComponent } from './components/typencu/typencu.component';
 
 
 const routes: Routes = [
@@ -17,7 +19,9 @@ const routes: Routes = [
   { path: 'page2', component: Page2Component },
   { path: 'page3', component: Page3Component},
   { path: 'page4', component: Page4Component},
-  { path: 'page5', component: Page5Component}
+  { path: 'page5', component: Page5Component},
+  { path: 'login', component: LoginComponent},
+  { path: 'typencu', component: TypencuComponent}
 ];
 
 

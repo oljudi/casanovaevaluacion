@@ -2,18 +2,24 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
-<br><br><br>
+
 <section class="login-block">
     <div class="container">
 	<div class="row ">
 		<div class="col login-sec">
+		    <h2 class="text-center">Bienvenido EVA</h2>
 		    <form class="login-form">
   <div class="form-group">
-    <label class="text-uppercase">Ingresa el numero de Orden</label>
-    <input type="text" class="form-control" placeholder="VI123456">    
-  </div> 
-    <div>
-        <a class="btnRegister" routerLinkActive="active-link" routerLink="/typencu">Encuesta</a>
+    <label class="text-uppercase">Numero de Empleado: </label>
+    <input type="text" class="form-control" placeholder="">
+    
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1" class="text-uppercase">Contraseña: </label>
+    <input type="password" class="form-control" placeholder="">
+  </div>
+    <div class="form-check">
+    <a type="submit" class="btn btn-login float-right">Ingresar</a>
   </div>
   
 </form>

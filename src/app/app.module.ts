@@ -10,6 +10,8 @@ import { SupportComponent } from './components/support/support.component';
 import { Page3Component } from './components/page3/page3.component';
 import { Page4Component } from './components/page4/page4.component';
 import { Page5Component } from './components/page5/page5.component';
+import { LoginComponent } from './components/login/login.component';
+import { TypencuComponent } from './components/typencu/typencu.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { Page5Component } from './components/page5/page5.component';
     SupportComponent,
     Page3Component,
     Page4Component,
-    Page5Component
+    Page5Component,
+    LoginComponent,
+    TypencuComponent
   ],
   imports: [
     BrowserModule,
